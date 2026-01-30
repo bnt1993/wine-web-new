@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     // quan trọng cho GitHub Pages
-    base: '/wine-web/',
+    base: '/wine-web-new/',
 
     server: {
       port: 3000,
