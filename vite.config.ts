@@ -6,24 +6,18 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
 
   return {
-    // quan trọng cho GitHub Pages
-    base: '/wine-web-new/',
-
-    server: {
-      port: 3000,
-      host: '0.0.0.0',
-    },
+    base: '/',   // 👈 CHỈ ĐỂ "/"
 
     plugins: [react()],
 
-    define: {
-      'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+    server: {
+      port: 3000,
+      host: true,
     },
 
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(__dirname, 'src'),
       },
     },
   }
