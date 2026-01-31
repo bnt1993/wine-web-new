@@ -1,16 +1,11 @@
+// vite.config.ts
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// Vite config tối ưu cho Vercel
+// NOTE: Với GitHub Pages ở https://<user>.github.io/<repo>/ cần base = '/<repo>/'
 export default defineConfig({
   plugins: [react()],
-
-  // Không cần base khi deploy lên Vercel
-  server: {
-    port: 5173,
-    open: true
-  },
-
+  base: '/wine-web-new/',     // <== thay bằng đúng tên repo của bạn
   build: {
     outDir: 'dist',
     emptyOutDir: true,
