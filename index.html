@@ -1,68 +1,41 @@
 <!DOCTYPE html>
 <html lang="vi">
   <head>
+    <!-- Basic SEO -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://lucide.dev/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tam Tửu - Tinh hoa rượu ngâm dược liệu Việt Nam. Cung cấp rượu đông trùng, rượu sâm, táo mèo chất lượng cao." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Tam Tửu — Tinh hoa rượu ngâm dược liệu Việt Nam: Đông trùng, nhân sâm, táo mèo, đẳng sâm và hơn thế nữa."
+    />
+    <meta name="theme-color" content="#4A0404" />
+
     <title>Tam Tửu - Tinh Hoa Dược Tửu</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              serif: ['"Playfair Display"', 'serif'],
-              sans: ['"Roboto"', 'sans-serif'],
-            },
-            colors: {
-              wood: {
-                800: '#5D4037',
-                900: '#3E2723',
-              },
-              gold: {
-                400: '#D4AF37',
-                600: '#B8860B',
-              },
-              royal: {
-                900: '#4A0404',
-              }
-            },
-            animation: {
-              'heartbeat': 'heartbeat 1.5s infinite',
-              'shake': 'shake 0.5s cubic-bezier(.36,.07,.19,.97) both',
-            },
-            keyframes: {
-              heartbeat: {
-                '0%, 100%': { transform: 'scale(1)' },
-                '50%': { transform: 'scale(1.05)' },
-              },
-              shake: {
-                '0%, 100%': { transform: 'translateX(0)' },
-                '10%, 30%, 50%, 70%, 90%': { transform: 'translateX(-2px)' },
-                '20%, 40%, 60%, 80%': { transform: 'translateX(2px)' },
-              }
-            }
-          }
-        }
-      }
-    </script>
-  <script type="importmap">
-{
-  "imports": {
-    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4"
-  }
-}
-</script>
-</head>
+
+    <!-- Favicon -->
+    https://lucide.dev/logo.svg
+
+    <!-- Preconnect để tăng tốc load fonts -->
+    https://fonts.googleapis.com
+    https://fonts.gstatic.com
+
+    <!-- Fonts chính của giao diện -->
+    https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap
+
+    <!-- Đề xuất: Nếu bạn dùng PWA thì mở comment dưới -->
+    <!-- <link rel="manifest" href="/manifest.webmanifest"> -->
+  </head>
+
   <body class="bg-stone-50 text-stone-800 font-sans antialiased">
+    <!-- Nếu người dùng tắt JS -->
+    <noscript>Vui lòng bật JavaScript để sử dụng website.</noscript>
+
     <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
+
+    <!-- Entry Vite chuẩn -->
+    /src/main.tsx</script>
+  </body>
 </html>
